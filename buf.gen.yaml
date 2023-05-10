@@ -1,0 +1,6 @@
+version: v1
+plugins:
+  - plugin: go
+    out: pb
+  - plugin: go-grpc
+    out: pb

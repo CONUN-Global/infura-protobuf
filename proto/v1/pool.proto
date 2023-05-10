@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package v1;
+
+option go_package = "./v1";
+
+
+message Pool {
+    string pool_address = 1;    
+} 
+
+message CreatePoolRequest {
+    Pool pool = 1;
+}
+
+message CreatePoolResponse {
+    string status = 1;
+    string message = 2;
+}
+
+service PoolService {
+    rpc CreatePool(CreatePoolRequest) returns (CreatePoolResponse) {}
+}
