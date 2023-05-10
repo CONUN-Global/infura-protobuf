@@ -1,2 +1,13 @@
 # infura-protobuf
-Includes protocol buffers along with generated codes in both `golang` and `Node`, for `infura` and `oceandrive` pool data exchanges.
+Infura protobuf definitions
+
+## Usage
+
+1. Generate the protobuf code:
+```
+    task gen
+```
+2. Lint the protobuf code:
+```
+    task lint
+```
